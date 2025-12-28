@@ -2,12 +2,12 @@
 version: "3"
 services:
  devopsdb:
-   image: shaikmustafa/myapp:dbimage
+   image: mrmeaningless/myapp:dbimage
    ports:
      - "3306:3306"
 
  application:
-   image: shaikmustafa/myapp:appimage
+   image: mrmeaningless/myapp:appimage
    ports:
      - "1222:80"
    depends_on:
